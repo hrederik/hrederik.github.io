@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0;}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   background: #ecf0f1;
@@ -7,39 +7,38 @@ body {
 
 a {
   color: #3498db;
-}
-
-a:hover {
   text-decoration: none;
 }
 
-#main-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+a:hover {
+  text-decoration: underline;
+}
 
-    margin: 120px auto 80px;
-    width: 90vw;
+#main-header {
+  padding: 60px 15px 60px;
 }
 
 .main-title {
+  font-size: 30px;
   text-align: center;
-  font-size: 22px;
-  max-width: 550px;
-  margin: 0 0 20px;
+  margin: 0 0 20px;  
 }
 
 .social-links-wrapper {
-  max-width: 550px;
+  text-align: center;
 }
 
 .social-link {
   margin: 10px 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 .projects-title {
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   margin: 0 0 20px;
 }
@@ -49,9 +48,6 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-
-  max-width: 550px;
-  margin: 0 auto;
 }
 
 .project-card {
@@ -99,4 +95,82 @@ a:hover {
 
 .card-link {
   margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  #main-header {
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    flex-wrap: wrap;
+  }
+
+  .card-info {
+    padding: 0 15px;
+  }
+}
+
+/*@media (max-width: 576px) {
+  #main-header {
+    color: red;
+    margin: 100px auto 60px;
+    padding: 0 15px;
+  }
+
+  .project-card {
+    flex-wrap: wrap;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+} */
+
+/*@media (min-width: 576px) {
+  #main-header {
+    color: blue;
+    margin: 120px auto 80px;
+    width: 540px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  .projects-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-header {
+    color: green;
+    margin: 120px auto 80px;
+    width: 720px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+
+  .projects-title {
+    font-size: 22px;
+  }
 }
